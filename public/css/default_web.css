@@ -1,0 +1,202 @@
+/*
+DEFAULT STYLE FOR App
+For compatibility with Base Framework
+*/
+
+input[type="checkbox"]{
+	zoom: 1.5;
+}
+.p-form{
+	margin-bottom: 0px;
+}
+.invalid-value{
+	border: 1px solid red;
+}
+.link-related-record > input:disabled{
+	cursor: pointer;
+	color: #007bff;
+}
+.loading-icon{
+	display: none;
+	cursor: disabled;
+	width: 1rem;
+	margin-right: 11px;
+}
+table.table-hover tbody tr:hover {
+    background-color: #dedede; 
+}
+.ui-autocomplete{
+   z-index: 1050 !important;
+}
+select[readonly]{
+	pointer-events: none;
+	touch-action: none;
+}
+.consulta-cep{
+	vertical-align: top;
+}
+.panel-name{
+	border-top: 2px solid #dee2e6;
+	border-bottom: 2px solid #dee2e6;
+	padding: 0.8rem 0 0.8rem 0.8rem;
+	margin-bottom: 5px;
+	background-color: #d8d8d8;
+}
+.table-pagination nav {
+	display: grid;
+}
+
+select.display-inline{
+	display: inline-block;
+	width: fit-content;
+	margin-right: 1rem;
+}
+.filter-certificados label{
+	font-weight: 600;
+}
+/*
+Botao de confirmação do Swetalert2 em degrade
+*/
+.swal2-actions:not(.swal2-loading) .swal2-confirm,
+.swal2-actions:not(.swal2-loading) .swal2-confirm:hover {
+	background-image: linear-gradient(90deg, rgba(232,39,36,1) 0%, rgba(242,124,12,1) 100%, rgba(42,49,147,1) 100%) !important;
+}
+.sweet-alert.sweetalert-lg { 
+	width: 600px; 
+}
+
+/**
+* LGPD
+**/
+@keyframes slide-top {
+    0% {
+      bottom: -10px;
+    }
+    100% {
+      bottom: 10px;
+    }
+}
+.banner-lgpd {
+	position: fixed;
+	left: 1rem;
+	right: 1rem;
+	bottom: -400px;
+	z-index: 29999999;
+	animation: slide-top 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s forwards;
+}
+.banner-lgpd__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	padding: 0.8rem 1.5rem;
+	box-sizing: border-box;
+	flex-direction: column;
+}
+@media (min-width: 561px) {
+	.banner-lgpd__container {
+		flex-direction: row;
+	}
+}
+@media (max-width: 560px) {
+	.banner-lgpd__column {
+		width: 100%;
+	}
+}
+.banner-lgpd__column p {
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	color: black;
+	margin: 0;
+	font-weight: 500;
+	line-height: 20px;
+}
+.banner-lgpd__column p a {
+	font-family: "Roboto", sans-serif;
+	color: #0088cc;
+	font-weight: 400;
+}
+.banner-lgpd__accept {
+	font-family: "Roboto", sans-serif;
+	background-color: #0088cc;
+	color: #ffffff;
+	border: 0;
+	padding: 0.8rem 2rem;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+@media (max-width: 560px) {
+	.banner-lgpd__accept {
+		width: 100%;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+}
+.banner-lgpd.accept {
+    display: none;
+}
+
+.menu-url p{
+	font-size:11px;
+}
+
+.msg-success{
+	background-color: #30ac00;
+	border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+	margin-bottom: 1rem;
+    border: 1px solid transparent;
+	position: relative;
+}
+
+.pagination.pagination-centered {
+    justify-content: center;
+    margin: 80px 0px 0px 0px;
+}
+ul.pagination {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.pagination li {
+    margin: 0px 10px;
+}
+ul.pagination a {
+    color: #222;
+    background-color: #efefef;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+ul.pagination .active a  {
+    color: #222;
+    background-color: #DDDDDD;
+	border-radius: 50px;
+    padding: 10px 15px;
+}
+
+.body-login{
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #DDD; */
+}
+.form-login{
+	flex-basis: 450px;
+}
+.login-card .card-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8rem;
+}
+
+.login-card .card-footer{
+	display: flex;
+	justify-content: flex-end;
+}
